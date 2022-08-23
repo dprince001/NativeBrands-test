@@ -1,0 +1,19 @@
+.search-bar {
+    // width: 60vw;
+    width: 70%;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+
+    .search-icon {
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+
+    input {
+        border: none;
+        outline: none;
+        width: 90%;
+    }
+
+}
