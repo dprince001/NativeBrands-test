@@ -14,7 +14,7 @@ const Summary = () => {
         </div>
         <div className='summary-data'>
             <div className='summary-total'>
-                <p>$1.2m</p>
+                <span>$1.2m</span>
                 <p>12 completed projects</p>
             </div>
             <div className='chart-info'>

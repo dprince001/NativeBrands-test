@@ -7,16 +7,20 @@
 body {
   margin: 0;
   font-family: 'lato';
+  width: 100vw;
 }
 
 .App {
   display: flex;
+  width: 100vw;
 
   .navbar-container {
     flex-basis: 20%;
     background-color: black;
     color: white;
+    border-radius: 0 8px 8px 0;
     padding: 25px;
+    position: relative;
 
     .nav-title {
       font-weight: 700;
@@ -70,13 +74,26 @@ body {
       justify-content: space-between;
       align-items: center;
       position: relative;
+
+      .menu-icon {
+        margin-left: 20px;
+      }
     }
 
     .categories-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 20px;
       margin: 30px 0;
+
+      @media (max-width: 900px) {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 20px;
+      }
+
+      @media (max-width: 600px) {
+        grid-template-columns: 1fr;
+      }
 
       & > div:nth-of-type(1) {
         background-color: #f2dada;
@@ -107,3 +124,25 @@ body {
   }
 }
 
+@media (min-width: 1100px) {
+  .menu-icon {
+    display: none;
+  }
+}
+
+@media (max-width: 1100px) {
+  .navbar-container {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .categories-container {
+      grid-template-columns: 1fr 1fr;
+  }
+
+  .section-2, .section-3 {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}

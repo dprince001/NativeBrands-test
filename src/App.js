@@ -20,6 +20,9 @@ import { ReactComponent as Sun } from "./assets/Sun (1).svg";
 
 
 
+import { ReactComponent as Menu } from "./assets/menu.svg";
+
+
 
 
 import NavbarComp from "./components/Navbar elements/Navbar-comp";
@@ -32,7 +35,7 @@ import RecentProjects from "./components/recent projects/recent-projects";
 import RecentProposal from "./components/recent proposals/RecentProposal";
 import UserDropdown from "./components/user-dropdown/user-dropdown";
 
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { UserContext } from "./context/UserContext";
 import { NotificationContext } from "./context/NotificationContext";
 import Notification from "./components/notification-dropdown/notification";
@@ -43,6 +46,7 @@ function App() {
 
     const {isOpen} = useContext(UserContext);
     const { isNotiOpen } = useContext(NotificationContext);
+
 
   return (
     <div className="App">
@@ -84,6 +88,7 @@ function App() {
         <div className="top-container">
           <SearchBoxComp />
           <UserComp />
+          {/* <Menu className="menu-icon" /> */}
         </div>
 
         {isNotiOpen ? <Notification /> : null}

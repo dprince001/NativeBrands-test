@@ -23,6 +23,16 @@
         justify-content: space-around;
         align-items: center;
         padding: 30px;
+
+        .summary-total {
+            text-align: center;
+
+            span {
+                color: #8D08F5;
+                font-size: 24px;
+                font-weight: 500;
+            }
+        }
     }
 }
 
