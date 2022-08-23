@@ -1,6 +1,6 @@
 .user-details-container {
     margin-left: 35px;
-    width: 30%;
+    width: 32%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,17 +50,22 @@
         
         
         p {
-            margin-left: 15px;
+            margin-left: 10px;
             
             span {
                 margin-left: 5px;
             }
         }
+
         @media (max-width: 700px) {
             padding: 5px;
 
             span {
                 display: none;
+            }
+
+            p {
+                font-size: 14px;
             }
         }
     }
