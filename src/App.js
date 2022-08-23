@@ -88,7 +88,6 @@ function App() {
         <div className="top-container">
           <SearchBoxComp />
           <UserComp />
-          {/* <Menu className="menu-icon" /> */}
         </div>
 
         {isNotiOpen ? <Notification /> : null}

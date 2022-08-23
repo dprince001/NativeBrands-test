@@ -48,12 +48,19 @@
         cursor: pointer;
 
         
-
+        
         p {
             margin-left: 15px;
-
+            
             span {
                 margin-left: 5px;
+            }
+        }
+        @media (max-width: 700px) {
+            padding: 5px;
+
+            span {
+                display: none;
             }
         }
     }
